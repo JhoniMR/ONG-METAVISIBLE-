@@ -1,0 +1,7 @@
+{
+  "name": "ONG-MRTA VISIBLE",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
