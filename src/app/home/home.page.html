@@ -1,20 +1,62 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Fundacione ONG
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<!--CONTENIDO SLIDERS-->
+  <ion-slides [options]="option" class="ion-margin-top">
+    <ion-slide>
+      <ion-card>
+        <img src="https://picsum.photos/500/500">
+      </ion-card>
+    </ion-slide>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-slide>
+      <ion-card>
+       <a routerLink="/prueba"> <img src="https://picsum.photos/seed/picsum/700/700"> </a>
+      </ion-card>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-card>
+        <img src="https://picsum.photos/500/500?grayscale">
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <!--CONTENIDO CARDS-->
+
+  <div class="card-background-page">
+    <ion-card class="informacio">
+      <img src="https://picsum.photos/500/500"/>
+      <div class="card-title">NUESTRA ONG</div>
+      <div class="card-subtitle">41 Listings</div>
+    </ion-card>
+
+    <ion-card class="informacio">
+      <img src="https://picsum.photos/seed/picsum/700/700"/>
+      <div class="card-title">EJES TRANSVERSALES</div>
+      <div class="card-subtitle">41 Listings</div>
+    </ion-card>
   </div>
+
+  <div class="card-background-page">
+    <ion-card class="informacio2">
+      <img src="https://picsum.photos/500/500?grayscale"/>
+      <div class="card-title">ACTIVIDADES</div>
+      <div class="card-subtitle">41 Listings</div>
+    </ion-card>
+  </div>
+
+  <div class="card-background-page">
+      <ion-card class="informacio3">
+        <img src="https://picsum.photos/200"/>
+        <div class="card-title">BENEFICIADOS</div>
+        <div class="card-subtitle">41 Listings</div>
+      </ion-card>
+    </div>
 </ion-content>
