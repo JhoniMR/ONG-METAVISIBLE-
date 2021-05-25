@@ -1,0 +1,90 @@
+.titulo{
+    text-align: center;
+    color: #fff;
+  }
+
+  .titulo{
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+  }
+  
+  //Sliders Cards
+  ion-card{
+    width: 100%;
+    width: 320px;
+    margin: 20px;
+    height: 190px;
+    margin-top: 0.19px;
+    box-shadow: none;
+    border-radius: 12px;
+    text-align: center;
+    
+  
+     img {
+       object-fit: cover;
+       width: 100%;
+       height: 100%;
+       transform: scale(1.1, 1.1) rotate(1deg);
+       transition: 600ms all ease-in-out;
+     }
+  }
+  
+  .swiper-slide-active{
+  transform:scale(1.05, 1.05);
+      
+      ion-card{
+        img{
+          transform: scale(1,1);
+        }
+      }
+   
+  }
+  
+  .swiper-slide{
+    transition: 440ms all ease-in-out;
+  }
+  
+  //Cards noticias
+  
+  .card-background-page {
+  
+    .card-title {
+      position: absolute;
+      top: 36%;
+      font-size: 1em;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+      
+    }
+  
+    .card-subtitle {
+      font-size: 1em;
+      top: 52%;
+      width: 100%;
+      color: #fff;
+      align-items: center;
+    }
+  
+  }
+   
+   .dimenciones{
+      height: 140px;
+      width: 200%;
+      border-radius: 15px;
+    }
+
+    .informacion{
+     text-align: justify;
+    }
+
+    .factura{
+     text-align: center;
+    }
+
+    .tamañocard{
+        height: 360px;
+    }
+  
+   
