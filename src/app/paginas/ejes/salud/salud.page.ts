@@ -9,6 +9,15 @@ export class SaludPage implements OnInit {
 
   constructor() { }
 
+  option= {
+    slidesPreView: 1.5,
+    centeredSlides: true,
+    loop: true,
+    spacaBetween: 10, 
+    autoplay:true,
+
+  }
+
   ngOnInit() {
   }
 
