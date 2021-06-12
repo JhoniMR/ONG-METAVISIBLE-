@@ -51,6 +51,12 @@ const routes: Routes = [
     path: 'feed',
     loadChildren: () => import('./paginas/feed/feed.module').then( m => m.FeedPageModule)
   },
+  {
+    path: 'nuevo-menu',
+    loadChildren: () => import('./nuevo-menu/nuevo-menu.module').then( m => m.NuevoMenuPageModule)
+  },
+
+  
 
  
 

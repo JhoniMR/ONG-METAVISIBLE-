@@ -1,35 +1,19 @@
-<ion-toolbar color="primary">
-  <ion-title class="titulo">Belleza</ion-title>
-</ion-toolbar>
+<ion-content fullscreen class="ion-text-center background">  
+  
+  <div class="toolbar" class="ion-text-start">
+    <ion-icon  name="chevron-back-outline" routerLink="/nuevo-menu"></ion-icon>
+  </div>
+  
+   <img class="home" src="../../../assets/imgs/Nuestraong/belleza/girl.jpg" width="100%"/> <h1 class="titulo-barber">BELLEZA</h1> 
+   
 
-<ion-content>
-  <ion-slides size="12" [options]="option"  class="ion-margin-top">
-    <ion-slide>
-      <ion-card>
-        <img src="../../../assets/imgs/Nuestraong/belleza/belleza.jpg">
-      </ion-card>
-    </ion-slide>
+ <div class="ion-text-justify informacion" > 
+  <ion-card-title class="titulo"> Belleza</ion-card-title> 
+   Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam omnis, sunt voluptate amet voluptates rem aliquam assumenda nam labore pariatur consectetur numquam soluta, temporibus odit doloremque eligendi non quod..
+    <div class="button-login ion-text-center">
+      <ion-button color="primary">FACTURA</ion-button>
+    </div>
+  </div>
 
-    <ion-slide>
-      <ion-card>
-       <a routerLink="/"> <img src="../../../assets/imgs/Nuestraong/belleza/peluquiada.jpg"> </a>
-      </ion-card>
-    </ion-slide>
-  </ion-slides>
-
- 
-    <ion-card class="tamañocard">
-      <ion-card-header>
-        <ion-card-title>Grupo Elite De Belleza</ion-card-title>
-      </ion-card-header>
-      <ion-card-content class="informacion">
-        El GRUPO ELITE DE BELLEZA es un instituto comprometido en ofrecer los servicios
-        de educación con la más alta calidad, aportando a nuestros alumnos los conocimientos
-        necesarios basados desde la experiencia, para que desarrollen al máximo todas sus 
-        habilidades y lograr mujeres económicamente independientes.
-      </ion-card-content>
-      <div class="factura">
-        <ion-button color="primary">Factura</ion-button>
-      </div>      
-    </ion-card>
+  
 </ion-content>

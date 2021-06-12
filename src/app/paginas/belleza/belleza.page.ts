@@ -10,7 +10,7 @@ export class BellezaPage implements OnInit {
   constructor() { }
   
   option= {
-    slidesPreView: 1.5,
+    slidesPreView: 2,
     centeredSlides: true,
     loop: true,
     spacaBetween: 10, 
