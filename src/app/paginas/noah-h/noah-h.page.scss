@@ -1,13 +1,6 @@
-.titulo{
-    text-align: center;
-    color: #fff;
-  }
-
-  .titulo{
-    text-align: center;
-    color: #fff;
-    border-radius: 10px;
-  }
+.ion-text-start {
+  font-size: 27px;
+}
   
   //Sliders Cards
   ion-card{
@@ -46,45 +39,39 @@
   }
   
   //Cards noticias
-  
-  .card-background-page {
-  
-    .card-title {
-      position: absolute;
-      top: 36%;
-      font-size: 1em;
-      width: 100%;
-      font-weight: bold;
-      color: #fff;
-      
-    }
-  
-    .card-subtitle {
-      font-size: 1em;
-      top: 52%;
-      width: 100%;
-      color: #fff;
-      align-items: center;
-    }
-  
-  }
-   
-   .dimenciones{
-      height: 140px;
-      width: 200%;
-      border-radius: 15px;
-    }
-
-    .informacion{
-     text-align: justify;
-    }
-
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
     .factura{
      text-align: center;
+     font-family: 'Poppins', sans-serif;
+    font-size: 16px;
     }
 
-    .tamañocard{
-        height: 440px;
-    }
+
+    ion-card.tamañocard.md.hydrated {
+      width: 90%;
+      background: aliceblue;
+      height: auto;
+  }
+
+  ion-card-title.ion-inherit-color.md.hydrated {
+    color: black;
+  }
+  
+  ion-card-content{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: black;
+  }
+
+  ion-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    left: 16px;
+  }
+
   
    

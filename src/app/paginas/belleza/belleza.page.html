@@ -7,13 +7,22 @@
    <img class="home" src="../../../assets/imgs/Nuestraong/belleza/girl.jpg" width="100%"/> <h1 class="titulo-barber">BELLEZA</h1> 
    
 
- <div class="ion-text-justify informacion" > 
-  <ion-card-title class="titulo"> Belleza</ion-card-title> 
-   Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam omnis, sunt voluptate amet voluptates rem aliquam assumenda nam labore pariatur consectetur numquam soluta, temporibus odit doloremque eligendi non quod..
-    <div class="button-login ion-text-center">
-      <ion-button color="primary">FACTURA</ion-button>
-    </div>
+   <div *ngFor="let item of informacion; index as i " >
+    <ion-card  *ngIf="item.titulo ==='GRUPO ELITE DE BELLEZA'" class="tamañocard">
+      <ion-card-header>
+        <ion-card-title >{{item.titulo}}</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content style="text-align: justify;">
+        {{item.descripcion}}
+      </ion-card-content>
+
+      <div class="factura">
+        <ion-button color="primary">Factura</ion-button>
+      </div>
+
+    </ion-card>
   </div>
 
-  
+<br>
 </ion-content>

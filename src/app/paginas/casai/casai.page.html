@@ -1,8 +1,13 @@
 <ion-toolbar color="primary">
-  <ion-title class="titulo">Belleza</ion-title>
+  <div class="iconoregresar" style="font-size: 30px; margin-top: 12px;">
+    <ion-icon  name="chevron-back-outline"[routerLink]="[ '/nuevo-menu' ]"></ion-icon>
+  </div>
+  <ion-title class="titulo">CASAI</ion-title>
 </ion-toolbar>
 
+
 <ion-content>
+  <!--SLIDER DE LA PAG-->
   <ion-slides size="12" [options]="option"  class="ion-margin-top">
     <ion-slide>
       <ion-card>
@@ -24,21 +29,24 @@
   </ion-slides>
 
  
-    <ion-card class="tamañocard">
-      <ion-card-header>
-        <ion-card-title>CASAI</ion-card-title>
-      </ion-card-header>
-      <ion-card-content class="informacion">
-        La CORPORACIÓN PARA LA CAPACITACIÓN DE SALUD INTEGRAL "CASAI", 
-        es una institución de formación para el trabajo y desarrollo humano, 
-        que forma en ciencias de salud, con un alto sentido ético, humano y pedagógico, 
-        capaces de orientar, asistir y participar en el cuidado integral del paciente y su familia. 
-        Desarrollando prácticas que promueva la salud y prevenga la enfermedad en el área comunitaria, 
-        clínica y empresarial; actuando con éxito en el campo laboral de la salud, a través de un equipo 
-        humano profesional comprometido y competente.  
-      </ion-card-content>
-      <div class="factura">
-        <ion-button color="primary">Factura</ion-button>
-      </div>      
-    </ion-card>
+    
+
+    <div *ngFor="let item of informacion; index as i " >
+      <ion-card  *ngIf="item.titulo ==='CASAI'" class="tamañocard">
+        <ion-card-header>
+          <ion-card-title >{{item.titulo}}</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content style="text-align: justify;">
+          {{item.descripcion}}
+        </ion-card-content>
+
+        <div class="factura">
+          <ion-button color="primary">Factura</ion-button>
+        </div>
+
+      </ion-card>
+    </div>
+
+    
 </ion-content>

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "webong-3ccda": {
+      "hosting": {
+        "app": [
+          "webong-3ccda"
+        ]
+      }
+    }
+  }
+}

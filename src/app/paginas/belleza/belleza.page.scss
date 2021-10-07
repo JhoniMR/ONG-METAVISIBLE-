@@ -11,7 +11,7 @@
   height: 50%;
   border-radius: 0 0 600px 0%/150px;
   object-fit: cover;
-  margin-top: -70px;
+  margin-top: -91px;
 }
 
 .titulo-barber{
@@ -55,3 +55,53 @@ ion-button{
   margin-top: 20%;
   text-shadow: 1px 0 #000000;
  }
+
+
+
+ /*--------------------------------*/
+
+ .ion-text-start {
+  font-size: 27px;
+}
+  
+ 
+  //Cards noticias
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    .factura{
+     text-align: center;
+     font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    }
+
+
+    ion-card.tamañocard.md.hydrated {
+      width: 90%;
+      background: aliceblue;
+      height: auto;
+
+      margin: auto;
+      margin-top: 56px;
+  }
+
+  ion-card-title.ion-inherit-color.md.hydrated {
+    color: black;
+  }
+  
+  ion-card-content{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: black;
+  }
+
+  ion-title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    left: 16px;
+  }
+
+  
+   
