@@ -8,14 +8,6 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'ejes',
-    loadChildren: () => import('./paginas/ejes/ejes.module').then( m => m.EjesPageModule)
-  },
-  {
-    path: 'nuestra-ong',
-    loadChildren: () => import('./paginas/nuestra-ong/nuestra-ong.module').then( m => m.NuestraOngPageModule)
-  },
-  {
     path: 'feed',
     loadChildren: () => import('./paginas/feed/feed.module').then( m => m.FeedPageModule)
   },
@@ -60,7 +52,8 @@ const routes: Routes = [
   {
     path: 'ejesbelleza',
     loadChildren: () => import('./paginas/ejesTransversales/belleza/belleza.module').then( m => m.BellezaPageModule)
-  },  {
+  },
+  {
     path: 'salud',
     loadChildren: () => import('./paginas/ejesTransversales/salud/salud.module').then( m => m.SaludPageModule)
   },
