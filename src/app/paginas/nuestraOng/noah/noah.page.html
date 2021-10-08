@@ -1,0 +1,29 @@
+
+<ion-content>
+  <div class="toolbar" class="ion-text-start">
+    <ion-icon  name="chevron-back-outline" routerLink="/menu"></ion-icon>
+  </div>
+  
+   <img class="home" src="../../../../assets/imgs/Nuestraong/noah-h/noah-portada.jpg" width="100%"/> <h1 class="titulo">FUNDACIÓN NOAH-H</h1> 
+
+
+    <div *ngFor="let item of informacion; index as i " >
+      <ion-card  *ngIf="item.titulo ==='FUNDACIÓN NOAH-H'" class="tamañocard">
+        <ion-card-header>
+          <ion-card-title >{{item.titulo}}</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content style="text-align: justify;">
+          {{item.descripcion}}
+        </ion-card-content>
+
+        <div class="factura">
+          <ion-button color="primary">Factura</ion-button>
+        </div>
+
+      </ion-card>
+    </div>
+
+  <br><br>
+    
+</ion-content>

@@ -1,74 +1,118 @@
-<ion-content>
-  <div class="toolbar" class="ion-text-start">
+ <!--<div class="toolbar" class="ion-text-start">
     <ion-icon  name="chevron-back-outline"></ion-icon>
-  </div>
-  <img size="12" class="home" src="../../../assets/backgroud/prueba-portada.png" width="100%"> 
-  
+  </div> -->
 
+
+
+<ion-content>
+  <img size="12" class="home" src="../../../assets/backgroud/prueba-portada.png" width="100%"> 
+ 
+  <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+    <ion-fab-button >
+     <ion-icon name="chevron-up-circle-outline"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button color="light">
+        <a href="https://fundacion.metavisible.org/#/404"><ion-icon name="cash-outline"></ion-icon></a>
+      </ion-fab-button>
+      <ion-fab-button color="light">
+        <a href="https://fundacion.metavisible.org/#/from-volunteers"><ion-icon name="people-circle-outline"></ion-icon></a>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+  
 <!--SLIDER-->
 <div class="cont-slider">
-  <!--CONTENIDO SLIDERS-->
   <ion-slides size="12" [options]="option"  class="ion-margin-top">
     <ion-slide>
-      <ion-card>
+      <ion-card class="cardslider">
         <img src="../../../assets/imgs/Nuestraong/slider-fotos/1.jpg">
       </ion-card>
     </ion-slide>
 
     <ion-slide>
-      <ion-card>
+      <ion-card class="cardslider">
        <a routerLink="/"> <img src="../../../assets/imgs/Nuestraong/slider-fotos/2.jpg"> </a>
       </ion-card>
     </ion-slide>
 
     <ion-slide>
-      <ion-card>
+      <ion-card class="cardslider">
         <img src="../../../assets/imgs/Nuestraong/slider-fotos/3.jpg">
       </ion-card>
     </ion-slide>
 
     <ion-slide>
-      <ion-card>
+      <ion-card class="cardslider">
         <img src="../../../assets/imgs/Nuestraong/slider-fotos/4.jpg">
       </ion-card>
     </ion-slide>
   </ion-slides>
 </div>
-<!--SLIDER-->
+
 
 <!--CONTENIDO-->  
   <div class="contenido">
- <ion-card style="background-color: aliceblue;">
-  <ion-item>
-    <img src="https://img.icons8.com/fluent/60/fa314a/conference.png" style="padding: 5px;">
-    <h4>NUESTRA ONG</h4>
-    <ion-button slot="end" routerLink="/nuevo-menu">Ver</ion-button>
-  </ion-item>
-</ion-card>
+    <ion-grid fixed class="card-background-page">
+      <div>
+        <ion-row>
+          <ion-col size="3" >
+            <ion-slide>
+            <ion-card class="dimenciones">
+              <a style="width: 100%;" routerLink="/menu"> <img class="fondomenu" src="https://image.freepik.com/foto-gratis/montanas-bukhansan-estan-cubiertas-niebla-manana-amanecer-parque-nacional-bukhansan-seul-corea-sur_335224-305.jpg"> 
+              <div class="card-title">NUESTRA ONG</div> </a>
+            </ion-card>
+          </ion-slide>
+        </ion-col>
+      
+          <ion-col size="3">
+            <ion-slide>
+              <ion-card class="dimenciones">
+               <a routerLink="/ejesmenu"> <img  class="fondomenu" src="https://image.freepik.com/foto-gratis/exito-mujer-excursionista-senderismo-pico-montana-amanecer-mujer-joven-mochila-subir-cima-montana-concepto-destino-viaje-descubrimiento_169160-17.jpg"> 
+                <div class="card-title">EJES</div> </a>
+              </ion-card>
+            </ion-slide>
+          </ion-col>
+      
+          <ion-col size="3">
+            <ion-slide>
+              <ion-card class="dimenciones">
+                <a routerLink="/actividades"> <img class="fondomenu" src="https://image.freepik.com/foto-gratis/hermoso-paisaje-impresionante-amanecer-que-refleja-mar_181624-16946.jpg"> 
+                <div class="card-title">ACTIVIDADES</div> </a>
+              </ion-card>
+            </ion-slide>
+          </ion-col>
+      
+          <ion-col size="3">
+            <ion-slide>
+              <ion-card class="dimenciones">
+                <a routerLink="/beneficios"><img class="fondomenu" src="https://image.freepik.com/foto-gratis/fondo-negro-geometrico-tecnologia-3d_53876-97124.jpg"> 
+                <div class="card-title">BENEFICIOS</div> </a>
+              </ion-card>
+            </ion-slide>
+          </ion-col>
+        </ion-row>
+      </div>
+    </ion-grid> 
 
-<ion-card>
-  <ion-item>
-    <img src="https://img.icons8.com/fluent/60/fa314a/groups.png" style="padding: 5px;">
-    <h4>EJES TRANSVERSALES</h4>
-    <ion-button slot="end" routerLink="/belleza">Ver</ion-button>
-  </ion-item>
-</ion-card>
+ 
+    <ion-card>
+      <img src="../../../assets/imgs/beneficios/beneficios-portada.jpg" />
+      <ion-card-header>
+        <ion-card-title>Madison, WI</ion-card-title>
+        <ion-card-subtitle>Destination</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content style="text-align: justify;">
+        Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the Wisconsin Territory in 1836.
+      </ion-card-content>
+    </ion-card>
 
-<ion-card>
-  <ion-item>
-    <img src="https://img.icons8.com/fluent/60/fa314a/franchise.png" style="padding: 5px;">
-    <h4>ACTIVIDADES</h4>
-    <ion-button slot="end" routerLink="/casai">Ver</ion-button>
-  </ion-item>
-</ion-card>
 
-<ion-card>
-  <ion-item>
-    <img src="https://img.icons8.com/fluent/60/fa314a/trophy.png" style="padding: 5px;">
-    <h4>BENEFICIOS</h4>
-    <ion-button slot="end" routerLink="/casai">Ver</ion-button>
-  </ion-item>
-</ion-card>
-</div>
-<!--CONTENIDO-->  
+
+    
+
+  <br><br><br>
+   
+  </div>
+<!--FIN DEL CONTENIDO-->  
 </ion-content>

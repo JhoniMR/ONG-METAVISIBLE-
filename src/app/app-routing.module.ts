@@ -4,44 +4,12 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'feed',
+    redirectTo: 'menu',
     pathMatch: 'full'
   },
   {
     path: 'ejes',
     loadChildren: () => import('./paginas/ejes/ejes.module').then( m => m.EjesPageModule)
-  },
-  {
-    path: 'facturas',
-    loadChildren: () => import('./paginas/facturas/facturas.module').then( m => m.FacturasPageModule)
-  },
-  {
-    path: 'belleza',
-    loadChildren: () => import('./paginas/belleza/belleza.module').then( m => m.BellezaPageModule)
-  },
-  {
-    path: 'teresitacorazon',
-    loadChildren: () => import('./paginas/teresitacorazon/teresitacorazon.module').then( m => m.TeresitacorazonPageModule)
-  },
-  {
-    path: 'pendulo',
-    loadChildren: () => import('./paginas/pendulo/pendulo.module').then( m => m.PenduloPageModule)
-  },
-  {
-    path: 'td-aportamos',
-    loadChildren: () => import('./paginas/td-aportamos/td-aportamos.module').then( m => m.TdAportamosPageModule)
-  },
-  {
-    path: 'cjhr-sas',
-    loadChildren: () => import('./paginas/cjhr-sas/cjhr-sas.module').then( m => m.CjhrSasPageModule)
-  },
-  {
-    path: 'noah-h',
-    loadChildren: () => import('./paginas/noah-h/noah-h.module').then( m => m.NoahHPageModule)
-  },
-  {
-    path: 'casai',
-    loadChildren: () => import('./paginas/casai/casai.module').then( m => m.CasaiPageModule)
   },
   {
     path: 'nuestra-ong',
@@ -51,10 +19,80 @@ const routes: Routes = [
     path: 'feed',
     loadChildren: () => import('./paginas/feed/feed.module').then( m => m.FeedPageModule)
   },
+  
+
+
+
   {
-    path: 'nuevo-menu',
-    loadChildren: () => import('./nuevo-menu/nuevo-menu.module').then( m => m.NuevoMenuPageModule)
+    path: 'menu',
+    loadChildren: () => import('./paginas/nuestraOng/menu/menu.module').then( m => m.MenuPageModule)
   },
+  {
+    path: 'teresita',
+    loadChildren: () => import('./paginas/nuestraOng/teresita/teresita.module').then( m => m.TeresitaPageModule)
+  },
+  {
+    path: 'belleza',
+    loadChildren: () => import('./paginas/nuestraOng/belleza/belleza.module').then( m => m.BellezaPageModule)
+  },
+  {
+    path: 'casai',
+    loadChildren: () => import('./paginas/nuestraOng/casai/casai.module').then( m => m.CasaiPageModule)
+  },
+  {
+    path: 'pendulo',
+    loadChildren: () => import('./paginas/nuestraOng/pendulo/pendulo.module').then( m => m.PenduloPageModule)
+  },
+
+  {
+    path: 'todosaportamos',
+    loadChildren: () => import('./paginas/nuestraOng/todos-aportamos/todos-aportamos.module').then( m => m.TodosAportamosPageModule)
+  },
+
+  {
+    path: 'sas',
+    loadChildren: () => import('./paginas/nuestraOng/sas/sas.module').then( m => m.SasPageModule)
+  },
+  {
+    path: 'noah',
+    loadChildren: () => import('./paginas/nuestraOng/noah/noah.module').then( m => m.NoahPageModule)
+  },
+  {
+    path: 'ejesbelleza',
+    loadChildren: () => import('./paginas/ejesTransversales/belleza/belleza.module').then( m => m.BellezaPageModule)
+  },  {
+    path: 'salud',
+    loadChildren: () => import('./paginas/ejesTransversales/salud/salud.module').then( m => m.SaludPageModule)
+  },
+  {
+    path: 'ejesmenu',
+    loadChildren: () => import('./paginas/ejesTransversales/ejesmenu/ejesmenu.module').then( m => m.EjesmenuPageModule)
+  },
+  {
+    path: 'recreacion',
+    loadChildren: () => import('./paginas/ejesTransversales/recreacion/recreacion.module').then( m => m.RecreacionPageModule)
+  },
+  {
+    path: 'proyectos',
+    loadChildren: () => import('./paginas/ejesTransversales/proyectos/proyectos.module').then( m => m.ProyectosPageModule)
+  },
+  {
+    path: 'bienestaranimal',
+    loadChildren: () => import('./paginas/ejesTransversales/bienestaranimal/bienestaranimal.module').then( m => m.BienestaranimalPageModule)
+  },
+  {
+    path: 'reforestacion',
+    loadChildren: () => import('./paginas/ejesTransversales/reforestacion/reforestacion.module').then( m => m.ReforestacionPageModule)
+  },
+  {
+    path: 'infraestructura',
+    loadChildren: () => import('./paginas/ejesTransversales/infraestructura/infraestructura.module').then( m => m.InfraestructuraPageModule)
+  },
+
+
+ 
+
+
 
   
 

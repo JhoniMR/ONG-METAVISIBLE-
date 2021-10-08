@@ -1,0 +1,26 @@
+
+<ion-content>
+  <div class="toolbar" class="ion-text-start">
+    <ion-icon  name="chevron-back-outline" routerLink="/ejesmenu"></ion-icon>
+  </div>
+  
+   <img class="home" src="../../../../assets/imgs/ejes/salud/salud-portada.jpg" width="100%"/> <h1 class="titulo">SALUD</h1> 
+
+
+    <div *ngFor="let item of informacion; index as i " >
+      <ion-card  *ngIf="item.titulo ==='SALUD'" class="tamañocard">
+        <ion-card-header>
+          <ion-card-title >{{item.titulo}}</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content style="text-align: justify;">
+          {{item.descripcion}}
+        </ion-card-content>
+
+     
+      </ion-card>
+    </div>
+
+  <br><br>
+    
+</ion-content>

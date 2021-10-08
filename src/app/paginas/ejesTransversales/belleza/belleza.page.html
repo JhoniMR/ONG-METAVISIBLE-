@@ -1,0 +1,24 @@
+
+<ion-content>
+  <div class="toolbar" class="ion-text-start">
+    <ion-icon  name="chevron-back-outline" routerLink="/ejesmenu"></ion-icon>
+  </div>
+  
+   <img class="home" src="https://cdn.pixabay.com/photo/2016/04/17/20/19/woman-1335487_960_720.jpg" width="100%"/> <h1 class="titulo">BELLEZA</h1> 
+
+
+    <div *ngFor="let item of informacion; index as i " >
+      <ion-card  *ngIf="item.titulo ==='BELLEZA'" class="tamañocard">
+        <ion-card-header>
+          <ion-card-title >{{item.titulo}}</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content style="text-align: justify;">
+          {{item.descripcion}}
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+  <br><br>
+    
+</ion-content>

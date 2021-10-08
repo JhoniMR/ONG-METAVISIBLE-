@@ -1,0 +1,40 @@
+:root {
+  --ion-safe-area-top: 20px;
+  --ion-safe-area-bottom: 22px;
+}
+
+ion-icon{
+  zoom: 2;
+  margin-top: -2px;
+  padding: 5px;
+  margin-left: -1px;
+ }
+
+ .regresar{
+   color: aliceblue;
+ }
+
+.home{ 
+  border-radius: 0 1634px 529%/440px;
+  object-fit: cover;
+  margin-top: -218px;
+} 
+
+ion-button.md.button.button-small.button-solid.ion-activatable.ion-focusable.hydrated {
+  position: absolute;
+  top: 0;
+  left: 80%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+ion-list-header{
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}

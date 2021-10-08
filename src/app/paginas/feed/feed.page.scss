@@ -1,7 +1,10 @@
-// NAV
+:root {
+  --ion-safe-area-top: 20px;
+  --ion-safe-area-bottom: 22px;
+}
+
 ion-icon{
   zoom: 2;
-  color: #ffffff00;
   margin-top: -2px;
   padding: 5px;
   margin-left: -1px;
@@ -9,24 +12,27 @@ ion-icon{
 
 .home{ 
   border-radius: 0 1634px 529%/440px;
-    object-fit: cover;
-    margin-top: -238px;
+  object-fit: cover;
+  margin-top: -174px;
+} 
+
+
+.titulo{
+  text-align: center;
+  color: #fff;
 }
 
-.logo{
-  width: 42%;
-  margin-top: -70px;
-  margin-left: 108px;
-}
-
-//SLIDER
-ion-slides{
-  width: 95%;
+//Sliders Cards
+.cardslider{
+  width: 100%;
+  width: 320px;
+  margin: 20px;
   height: 190px;
-  margin-top: 25.19px;
+  margin-top: 0.19px;
+  box-shadow: none;
   border-radius: 12px;
+  text-align: center;
   
- 
 
    img {
      object-fit: cover;
@@ -40,7 +46,7 @@ ion-slides{
 .swiper-slide-active{
 transform:scale(1.05, 1.05);
     
-ion-slides{
+.cardslider{
       img{
         transform: scale(1,1);
       }
@@ -50,34 +56,61 @@ ion-slides{
 
 .swiper-slide{
   transition: 440ms all ease-in-out;
-}  
+}
 
+img.fondomenu {
+  width: 184%;
+  height: 105%;
+  object-fit: cover;
+}
 
-
-
-
-
-
-
-
-
-
-
-//MENU DE LA APP
-.contenido{
-  margin: 4px;
-  margin-bottom: auto;
-  margin-top: 10px;
+.dimenciones   {
+  height: 128px;
+  width: 98px;
+  zoom: 73%;
 }
 
 ion-card{
-  border-radius: 20px;
+  background: white;
 }
+    .card-title {
+      position: absolute;
+      top: 80%;
+      font-size: 14px;
+      width: 100%;
+      font-weight: bold;
+      color: #fff; 
+    }
 
-h4{
-  @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
-  font-family: 'Hammersmith One', sans-serif;
-  color: #282828;
-  font-size: 16px;
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+ 
+ ion-card-subtitle {
+      color: black;
+      font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+  }
   
-}
+  ion-card-title{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+  }
+
+  ion-card-content{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+  }
+
+  
+  
+
+   
+ 
+
+  
+  
+  
+  
+  
+  
