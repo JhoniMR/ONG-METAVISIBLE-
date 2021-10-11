@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/auth/auth.service';
 
 @Component({
-  selector: 'app-recreacion',
-  templateUrl: './recreacion.page.html',
-  styleUrls: ['./recreacion.page.scss'],
+  selector: 'app-beneficios',
+  templateUrl: './beneficios.page.html',
+  styleUrls: ['./beneficios.page.scss'],
 })
-export class RecreacionPage implements OnInit {
+export class BeneficiosPage implements OnInit {
 
   informacion: any[]=[];
   isLogged = false;
@@ -25,7 +25,7 @@ export class RecreacionPage implements OnInit {
     this.getMostrar(this.path);
   }
 
-  private path ='ejesTrasnversales'
+   private path ='beneficios'
 
   getMostrar( path: string){
     this.authService.getMostrar(this.path).subscribe(data =>{
@@ -36,6 +36,8 @@ export class RecreacionPage implements OnInit {
             ...element.payload.doc.data()
           })
         });
+
+        console.log(this.informacion);
 
         if(this.informacion === null){
           this.isLogged = false;

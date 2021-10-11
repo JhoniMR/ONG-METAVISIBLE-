@@ -1,0 +1,50 @@
+:root {
+    --ion-safe-area-top: 20px;
+    --ion-safe-area-bottom: 22px;
+  }
+  
+  ion-icon{
+    zoom: 2;
+    margin-top: -2px;
+    padding: 5px;
+    margin-left: -1px;
+   }
+  
+   .regresar{
+     color: aliceblue;
+   }
+  
+  .home{ 
+    border-radius: 0 1634px 529%/440px;
+    object-fit: cover;
+    margin-top: -218px;
+  } 
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+h2 {
+    color: #000b58;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+p {
+    color: black;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    width: 93%;
+    margin-left: 11px;
+}
+
+textarea#floatingTextarea2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    width: 95%;
+    margin: auto;
+    background: white;
+    border: none;
+    font-size: 17px;
+   
+}

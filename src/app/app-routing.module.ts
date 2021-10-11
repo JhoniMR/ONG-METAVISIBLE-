@@ -49,6 +49,13 @@ const routes: Routes = [
     path: 'noah',
     loadChildren: () => import('./paginas/nuestraOng/noah/noah.module').then( m => m.NoahPageModule)
   },
+
+
+
+
+
+
+  
   {
     path: 'ejesbelleza',
     loadChildren: () => import('./paginas/ejesTransversales/belleza/belleza.module').then( m => m.BellezaPageModule)
@@ -81,6 +88,14 @@ const routes: Routes = [
     path: 'infraestructura',
     loadChildren: () => import('./paginas/ejesTransversales/infraestructura/infraestructura.module').then( m => m.InfraestructuraPageModule)
   },
+  {
+    path: 'actividades',
+    loadChildren: () => import('./paginas/actividades/actividades/actividades.module').then( m => m.ActividadesPageModule)
+  },  {
+    path: 'beneficios',
+    loadChildren: () => import('./paginas/beneficios/beneficios/beneficios.module').then( m => m.BeneficiosPageModule)
+  },
+
 
 
  

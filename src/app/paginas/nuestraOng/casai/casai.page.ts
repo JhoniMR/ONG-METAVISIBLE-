@@ -25,7 +25,7 @@ export class CasaiPage implements OnInit {
     this.getMostrar(this.path);
   }
 
-  path ='nuestraOng'
+  private path ='nuestraOng'
 
   getMostrar( path: string){
     this.authService.getMostrar(this.path).subscribe(data =>{

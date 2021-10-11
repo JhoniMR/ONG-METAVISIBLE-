@@ -26,7 +26,7 @@ export class ProyectosPage implements OnInit {
     this.getMostrar(this.path);
   }
 
-  path ='ejesTrasnversales'
+  private path ='ejesTrasnversales'
 
   getMostrar( path: string){
     this.authService.getMostrar(this.path).subscribe(data =>{
