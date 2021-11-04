@@ -1,0 +1,74 @@
+:root {
+    --ion-safe-area-top: 20px;
+    --ion-safe-area-bottom: 22px;
+  }
+  
+  ion-icon{
+    zoom: 2;
+    margin-top: -2px;
+    padding: 5px;
+    margin-left: -1px;
+   }
+  
+   .regresar{
+     color: aliceblue;
+   }
+  
+  .home{ 
+    border-radius: 0 1634px 529%/440px;
+    object-fit: cover;
+    margin-top: -218px;
+  } 
+  
+  a{
+    width: 103px;
+    font-size: 11px;
+    font-weight: 600;
+    background: #00368f;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    height: 21px;
+    top: 12p;
+    padding: 5px;
+
+    -webkit-box-shadow: 10px 10px 5px -5px rgba(224,224,224,1);
+    -moz-box-shadow: 10px 10px 5px -5px rgba(224,224,224,1);
+    box-shadow: 10px 10px 5px -5px rgba(224,224,224,1);
+  }
+
+  .unirme {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  ion-card{
+    background: aliceblue;
+    color: black;
+  }
+
+  ion-card-title{
+    font-weight: 600;
+    color: black;
+    font-size: 12px;
+    width: 65%;
+    text-align: justify;
+    margin-top: -30px;
+  }
+
+  ion-card-content{
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+  }
+
+  ion-item{
+    width: 90%;
+    margin: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+    border: 1px solid #6a6a6a;
+  }
+  

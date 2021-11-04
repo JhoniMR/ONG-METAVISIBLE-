@@ -1,0 +1,31 @@
+
+<ion-content>
+  <div routerLink="/feed" class="toolbar" class="ion-text-start">
+    <ion-icon class="regresar" name="chevron-back-outline"></ion-icon>
+  </div> 
+    <img size="12" class="home" src="../../../assets/backgroud/prueba-portada.png" width="100%"> 
+
+    <ion-item *ngIf="code == 0837 == false">
+      <ion-label position="floating">Ingresa el codigo del evento</ion-label>
+      <ion-input [(ngModel)]="code"></ion-input>
+    </ion-item>
+
+    <ion-card *ngIf="code == 0837 == true">
+      <div class="unirme">
+          <a href="https://chat.whatsapp.com/IBDovtquil3IH1ff57iiis">UNIRME AL GRUPO</a>
+      </div>
+      <ion-card-header>
+        <ion-card-title>ACACIAS CIUDAD DE DIOSES, AMEN AMEN, VOY POR TI ERIKA & ANGIE</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sunt sed corporis ipsum error enim voluptatem, adipisci in excepturi, veritatis, voluptate illum! Eveniet facilis fugit aspernatur culpa quod amet laboriosam.
+      </ion-card-content>
+    </ion-card>
+    
+ 
+</ion-content>
+  
+
+
+
+

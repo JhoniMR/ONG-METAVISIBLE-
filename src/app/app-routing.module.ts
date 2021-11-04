@@ -95,6 +95,10 @@ const routes: Routes = [
     path: 'beneficios',
     loadChildren: () => import('./paginas/beneficios/beneficios/beneficios.module').then( m => m.BeneficiosPageModule)
   },
+  {
+    path: 'chat',
+    loadChildren: () => import('./paginas/chat/chat.module').then( m => m.ChatPageModule)
+  },
 
 
 

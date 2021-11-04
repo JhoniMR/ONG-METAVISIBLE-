@@ -10,7 +10,7 @@
    <div *ngFor="let item of informacion; index as i">
      <div *ngIf="i === 1">
        <h2 class="section-title">{{item.titulo}}</h2>
-      <textarea  class="form-control sinColor" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px" disabled>{{item.descripcion}}</textarea>
+       <p>{{item.descripcion}}</p>
      </div>
    </div>
   </ion-col>
@@ -21,7 +21,7 @@
    <div *ngFor="let item of informacion; index as i">
      <div *ngIf="i !== 1">
        <h2 class="section-title">{{item.titulo}}</h2>
-      <textarea  class="form-control sinColor" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 200px" disabled>{{item.descripcion}}</textarea>
+       <p>{{item.descripcion}}</p>
      </div>
    </div>
   </ion-col>

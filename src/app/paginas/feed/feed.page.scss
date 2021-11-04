@@ -16,7 +16,6 @@ ion-icon{
   margin-top: -174px;
 } 
 
-
 .titulo{
   text-align: center;
   color: #fff;
@@ -85,22 +84,36 @@ ion-card{
   @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
  
  ion-card-subtitle {
-      color: black;
-      font-family: 'Poppins', sans-serif;
+    color: black;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
+    margin-left: 5px;
   }
   
   ion-card-title{
     color: black;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+    margin-left: 5px;
+    font-weight: 600;
   }
 
   ion-card-content{
     color: black;
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
+    margin-left: 5px;
+    white-space: pre-wrap;
   }
+
+  .stilosimg {
+    width: 92%;
+    margin: auto;
+}
+
+.imagen-info{
+  border-radius: 20px;
+}
 
   
   

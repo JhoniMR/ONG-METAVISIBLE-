@@ -18,6 +18,11 @@
       <ion-fab-button color="light">
         <a href="https://fundacion.metavisible.org/#/from-volunteers"><ion-icon name="people-circle-outline"></ion-icon></a>
       </ion-fab-button>
+
+      <ion-fab-button color="light">
+        <a href="chat"><ion-icon name="chatbubbles"></ion-icon></a>
+      </ion-fab-button>
+
     </ion-fab-list>
   </ion-fab>
   
@@ -96,16 +101,18 @@
     </ion-grid> 
 
  
-    <ion-card>
-      <img src="../../../assets/imgs/beneficios/beneficios-portada.jpg" />
+    <div *ngFor="let item of informacion">
+      <div class="stilosimg">
+        <img class="imagen-info" [src]="item.imagen"/>
+      </div>
       <ion-card-header>
-        <ion-card-title>Madison, WI</ion-card-title>
-        <ion-card-subtitle>Destination</ion-card-subtitle>
+        <ion-card-title>{{item.titulo}}</ion-card-title>
+        <ion-card-subtitle>{{item.fechacreacion | date}}</ion-card-subtitle>
       </ion-card-header>
-      <ion-card-content style="text-align: justify;">
-        Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the Wisconsin Territory in 1836.
+      <ion-card-content class="descripcion" style="text-align: justify;">
+       {{item.descripcion}}
       </ion-card-content>
-    </ion-card>
+    </div>
 
 
 
